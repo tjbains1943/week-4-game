@@ -1,5 +1,5 @@
 
-
+// Variables declared
 var Goal;
 var Wins = 0;
 var Losses = 0;
@@ -10,16 +10,17 @@ var button4;
 var Score;
 var Count = 0;
 
-
+// Setting Wins to 0
 $("#Wins").html("Wins:" + Wins);
 $("#Losses").html("Losses:" + Losses);
 
-
+//  Makes random number and displays it
 function goal() {
 	 Goal = Math.floor((Math.random() * 101) + 19);
 	 $("#Goal").text(Goal);
 }
 
+// Adds random value to images
 function score() {
 	 Count = 0;
 	 $("#totalScore").html(Count);
@@ -35,6 +36,7 @@ function score() {
 	
 }
 
+// Starts game, when user clicks crystal, score is added
 goal();
 score();
  $('#first').on('click', function(){
@@ -58,6 +60,7 @@ score();
     checkWin();
   })  
 
+//  Checks for win or lose
  function checkWin() {
  	if(Count === Goal) {
  		alert("You win, but still");
