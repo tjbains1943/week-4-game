@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Crystal Collector</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+        <h1 class="bg-light px-0">Crystal Collector</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center bg-light">
+          <h4>Game Rules</h4>
+            <p><strong> There will be four crystals displayed as buttons on the page. The player will be shown a random number at the start of the game.
+            When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+            Your game will hide this amount until the player clicks a crystal.
+            When they do click one, update the player's score counter.
+            </p>
+            <p>The player wins if their total score matches the random number from the beginning of the game. The player loses if their score goes above the random number.
+            </strong>
+            </p>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-md-4 bg-light offset-md-3">
+          <h5><u>Your Target</u></h5>
+          <h1 id="Goal"></h1>
+        </div>
+        <div class="col-md-2 bg-light">
+          <h5 id="displayResult"><u>Your Score</u></h5>
+          <p id="Wins"></p>
+          <p id="Losses"></p>
+        </div>
+      </div>
+      <div class="row getPoints bg-light py-1">
+        <img src="assets/images/banner-1022122_1920.jpg" alt="" height=200 width=275 id="first" value="">
+        <img src="assets/images/christmas-2948567_1920.jpg" alt="" height=200 width=275 id="second" value="">
+        <img src="assets/images/colored-glass-3092416_1920.jpg" alt="" height=200 id="third" value="">
+        <img src="assets/images/ice-crystal-2871068_1920.jpg" alt="" height=200 id="fourth" value="">
+        
+      </div>
+      <div class="row">
+        <div class="col-md-6 bg-light offset-md-3">
+          <h5><u>Your total Score is:</u></h5>
+           <h1 id="totalScore"></h1>
+        </div>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
